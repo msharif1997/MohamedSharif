@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Assignment: Random Number Generator </title>
+
+    </head>
+    <script>
+        function NumberGenerator(){
+           // alert("This function is working at this fucntion!!");
+            document.getElementById("ramdomNumbers").innerHTML =  parseInt(Math.random()*10) + 1;
+        }
+        
+    </script>
+    <body>
+        <h1>Assignment: Random Number Generator </h1>
+        <p>This Assignment lets you generate random numbers by clicking the button below!! </p>
+            <input type="button" value="Click Me"  onclick="NumberGenerator()"/>
+            <p id="ramdomNumbers"></p>
+      
+    </body>
+</html>

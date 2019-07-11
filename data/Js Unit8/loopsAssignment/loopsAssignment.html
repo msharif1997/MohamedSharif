@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>WDV221 Intro Javascript - Loops</title>
+</head>
+ <style>
+ .color{
+   color: red;
+ }
+ 
+ </style>
+<body>
+<h1>WDV221 Intro Javascript</h1>
+<h2>Project-5 Loops Assignment</h2>
+<hr />
+<p>Please complete the following exercises on this page. When complete post this page to your  server. Make a link in your WDV221 homework  page for this assignment. </p>
+<p>Include a comment in each script with the exercise number and a description of what the script is supposed to do.</p>
+<p>Using Blackboard submit this  Assignment.</p>
+<hr />
+<h3>Instructions: </h3>
+<p>Please complete the following exercises using Javascript loops as indicated.  Please place your code on this page. Use runtime scripts unless told otherwise. </p>
+<p>1. Create a WHILE loop that will print out the  numbers 0 to 4 each on a seperate line.</p>
+<p id="Whileloop"></p>
+<script>
+    var i = 0; 
+    var text = "";
+  
+      while (i < 5) {
+      text += "<br> The number is: " + i;
+     i++;
+    }
+    // alert(text);
+    //document.write( text );
+    document.getElementById("Whileloop").innerHTML = text;
+  </script> 
+
+<p>2. Create a FOR loop that will print out the  numbers 4 to 0 each on a seperate line.</p>
+  <p id="forloop"></p>
+<script>
+    var numbers = [0,1,3,4];
+    var text ="";
+    var i;
+    for (i = 0; i < numbers.length; i++){
+      text += numbers[i] + "<br> ";
+    }
+    document.getElementById("forloop").innerHTML = text;
+</script>
+<p>3. Create a loop that will print 1 to 5 each in its own paragraph element.</p>
+<p id="loop"></p>
+<script>
+    var i = 1; 
+    var text = "";
+  
+      while (i < 6) {
+      text += "<br> The number is: " + i;
+     i++;
+    }
+    document.getElementById("loop").innerHTML = text;
+  </script> 
+<p>4. Create a loop that will print out the following numbers (5,10,15,20,25...) until one is greater than 40.</p>
+<p id="whileNum"></p>
+<script>
+    var i = 5 ; 
+    var text = "";
+  
+      while (i < 45) { 
+      text += "<br> The number is: " + i;
+     i = i +5;
+    }
+    document.getElementById("whileNum").innerHTML = text;
+</script>
+<p>5. Create a loop that will print out  6 of the following messages (Option 1, Option 2, Option 3, etc. ) as options within the drop down menu below.</p>
+<!-- <script>
+var year = 'option';
+document.write("<select name='years'>");
+
+for (var i=1; i <=3; i++)
+{
+year++;
+document.write("<option>" + year + " " + i + "</option>");
+
+} 
+
+</script> -->
+<p>
+  <label>Select an Option! 
+    <select name="select" id="select">
+    </select>
+  </label>
+</p>
+
+<script>
+    var select = document.getElementById("select");
+      arr = ["Option 1","Option 2","Option 3","Option 4","Option 5","Option 6"];
+    
+    for (var i =0; i < arr.length; i++){
+       var option = document.createElement("OPTION");
+        txt = document.createTextNode(arr[i]);
+       option.appendChild(txt);
+       select.insertBefore(option,select.lastChild);
+    }
+</script>
+<p>&nbsp;</p>
+</body>
+</html>

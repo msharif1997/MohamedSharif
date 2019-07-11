@@ -1,0 +1,26 @@
+<html>
+
+<head>
+
+    <title></title>
+
+</head>
+
+<body>
+    <h1>Unit 3 examples during class</h1>
+    <script>
+
+        var emailAddress = "msharif@dmacc.edu";
+        var atPosition = emailAddress.indexOf("@");
+        var emailName = emailAddress.slice(0,atPosition);
+        var emailServer = emailAddress.slice(atPosition + 1);
+        alert("The @ is located at position: " + atPosition);
+        document.write(emailName);
+        document.write(emailServer);
+    </script>
+
+
+
+    
+</body>
+</html>

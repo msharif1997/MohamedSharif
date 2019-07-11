@@ -1,0 +1,46 @@
+body{
+	background: gainsboro;
+	font-family: Arial,sans-serif;
+	font-size: 1.2em;
+	color:teal;
+}
+
+h1{
+	text-align: center;
+	color: black;
+	
+}
+
+h2{
+	color: maroon;
+    border-bottom: solid thick darkkhaki;
+	margin:15px;
+}
+
+h3{
+	color: maroon;
+    border-bottom: solid thick darkkhaki;
+	
+	
+}
+
+h4{
+	color: maroon;
+    border-bottom: solid thick darkkhaki;
+	
+   
+   	
+}
+img{
+	float:left;
+	margin:25px;
+}
+
+img.right{
+	float:right;
+	margin:10px;
+}
+
+p{
+	line-height: 1.5;
+}

@@ -1,0 +1,118 @@
+ <!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>WDV221 Intro Javascript - Operators and Textfields Assignment</title>
+
+<style>
+
+body {background-color:#C99;
+}
+
+.highlightTitle	{
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-style:italic;
+	font-size:14px;
+	text-decoration:underline;
+	color:#096;
+}
+
+
+</style>
+
+<script> 
+	var count = 0;
+  var getValue1 = "";
+  var getValue2 ="";
+
+  function displayTheValue1(){
+    //alert("Am inside the function displayTheValue1()");
+    getValue1 = parseInt(document.getElementById('value1').value);
+    //alert(getValue1);
+   document.getElementById("DisplayValue1").value = getValue1;
+  }
+
+    function displayTheValue2(){
+     // alert("Am inside the function displayTheValue2()");
+       getValue2 = parseInt(document.getElementById('value2').value);
+     // alert(getValue2);
+      document.getElementById("DisplayValue2").value = getValue2;
+  }
+
+  function multiplyValues(){
+    //alert("This function is working multiplyValues()");
+    var Multiply = getValue1 * getValue2;
+    //alert(Multiply);
+    document.getElementById("displayMultiplyValues").value = Multiply;
+  }
+  
+  function AddValues(){
+    //alert("This function is working AddValues()");
+    var add = getValue1 + getValue2;
+    //alert(Add);
+    document.getElementById("displayAddValues").value = add;
+  }
+
+  function IncrementValues(){
+    //alert("This function is working IncrementValues()");
+    count += 1;
+    document.getElementById("IncrementValue").value = count;
+  }
+
+
+</script>
+
+
+</head>
+
+<body>
+<h2>WDV221 Intro Javascript</h2>
+<h3>Project 3 - Operators and Textfields - Assignment</h3>
+<hr />
+<p>Please complete the following exercises on this page. When complete post this page to your  server. Make a link in your WDV221 homework  page for this assignment. </p>
+<p>Include a comment in each script with the exercise number and a description of what the script is supposed to do.</p>
+<p>Using Blackboard submit this  Assignment.</p>
+<hr />
+<h3>Instructions</h3>
+<p>Use the form fields for the input values. For each of the following exercises create a function what will be activated by the button.  </p>
+<form name="form1" method="post" action="">
+  <p>Enter a number for value1:
+    <input type="text" id="value1" />
+  </p>
+  <p>Enter a number for value 2:
+    <input type="text" id="value2" /> 
+  </p>
+  <p>1.
+    <input type="button" value="Display value1"  onclick="displayTheValue1()"/>
+    Display the value you entered for value1:
+  <input type="text" id="DisplayValue1" />
+  </p>
+  <p>2.
+    <input type="button" value="Display value2"  onclick="displayTheValue2()" />
+    Dislplay the value you entered for value2:
+  <input type="text" id="DisplayValue2"/>
+  </p>
+  <p>3.
+    <input type="button" value="Multiply" onclick="multiplyValues()"/>
+    Display the value of value1 * value2:
+  <input type="text" id="displayMultiplyValues" value=""/>
+  </p>
+  <p>4.
+    <input type="button" value="Add" onclick="AddValues()"/>
+    Display the results of value1 + value2 in the following textfield.
+  <input type="text" id="displayAddValues" value=""/>
+  </p>
+  <p>5.
+    <input type="button" value="Increment count" onclick="IncrementValues()" />
+    Use the increment operator to add 1 to count and display the new value of count.
+  <input type="text" id="IncrementValue" value="" />
+  </p>
+  <p>
+    <input type="reset" name="Reset" id="button" value="Reset">
+  </p>
+</form>
+<p>&nbsp;</p>
+</body>
+
+
+</html>

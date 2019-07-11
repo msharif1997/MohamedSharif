@@ -1,0 +1,65 @@
+<html>
+
+    <head>
+        <title>Assignment: Event Handlers</title>
+    </head>
+
+    <script>
+    function displayName(){
+        
+       fname = document.forms[0].fname.value;
+         alert("Hello " + fname + "! Welcome to my website!!");
+        
+    }
+    
+    
+    function bigImg(x) {
+        x.style.height = "450px";
+        x.style.width = "450px";
+    }
+
+    function normalImg(x) {
+        x.style.height = "200px";
+        x.style.width = "200px";
+    }
+
+    function Myselect() { 
+        var x = document.getElementById("mySelect").value;
+        document.getElementById("demo").innerHTML = "You selected: " + x;
+    }
+
+    function myFunction() {
+        alert("Page is IMG");
+    }
+    </script>
+
+<body >
+    <h1 >WDV 221 Assignment: Event Handlers</h1>
+    <br>
+    <form onsubmit="displayName()" action="#">
+        Enter your name: <input id="fname" type="text" size="20">
+        <input type="submit">
+    </form>
+
+    <input type="button" name="button" id="button" value="Displays the name you input" onClick="displayName()">
+
+    <br>
+    <br>
+
+    <img onload="myFunction()" onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="img/catProgrammer.jpeg" alt="cat Programmer" width="200" height="200">
+    <br>
+    <br>
+    <h4>Please select one of the following options in the drop box below</h4>
+ 
+    <select id="mySelect" onchange="Myselect()">
+        <option value="Audi">Audi
+        <option value="BMW">BMW
+        <option value="Mercedes">Mercedes
+        <option value="Volvo">Volvo
+    </select>
+
+    <p id="demo"></p>
+
+
+</body>
+</html>
